@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features - VotingSystem AS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar {
+            border-radius: 20px;
+            background-color: #1f1f1f;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand i {
+            font-size: 2rem;
+            margin-right: 10px;
+            color: #0ef;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            transition: 0.4s ease;
+        }
+
+        .nav-link:hover {
+            color: #0ef !important;
+            transform: scale(1.1);
+        }
+
+        .hero-features {
+            background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d1') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero-features h1 {
+            font-size: 3rem;
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        .hero-features p {
+            font-size: 1.2rem;
+            animation: fadeInUp 2s ease-in-out;
+            max-width: 700px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .slide-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-in-out;
+        }
+
+        .slide-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .icon-lg {
+            font-size: 2.5rem;
+            color: #0ef;
+            margin-bottom: 15px;
+        }
+
+        .feature-box {
+            background-color: #1f1f1f;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            background-color: #2a2a2a;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-fingerprint"></i> VotingSystem AS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#security">Security</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#vote">Vote</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-features text-white mt-5">
+        <h1>Platform Features</h1>
+        <p>Explore the core technologies that power our secure and transparent blockchain voting system.</p>
+    </section>
+
+    <!-- Core Features -->
+    <section class="container slide-in">
+        <h2 class="text-center mb-5">Core Blockchain Features</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="bi bi-lock-fill icon-lg"></i>
+                    <h5>Security</h5>
+                    <p>End-to-end encryption and cryptographic verification for every transaction and vote cast.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="bi bi-globe icon-lg"></i>
+                    <h5>Decentralization</h5>
+                    <p>Data stored across a distributed network ensures trustless consensus and immutability.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="bi bi-clock-history icon-lg"></i>
+                    <h5>Real-Time Processing</h5>
+                    <p>Votes are validated and reflected on-chain within seconds for maximum efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blockchain Security -->
+    <section class="container slide-in">
+        <h2 class="text-center mb-5">Blockchain Security & Performance</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-shield-alt icon-lg"></i>
+                    <h5>Immutability</h5>
+                    <p>Once recorded, votes cannot be altered — ensuring integrity and auditability.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-user-shield icon-lg"></i>
+                    <h5>Voter Privacy</h5>
+                    <p>Advanced cryptographic techniques protect voter identities while maintaining transparency.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-network-wired icon-lg"></i>
+                    <h5>DDoS Resilience</h5>
+                    <p>Node replication and load balancing protect the system from malicious network attacks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Contracts -->
+    <section class="container slide-in">
+        <h2 class="text-center mb-5">Smart Contract Advantages</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fab fa-ethereum icon-lg"></i>
+                    <h5>Self-Executing Logic</h5>
+                    <p>Votes are automatically counted and locked via secure, tamper-proof smart contracts.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-code-branch icon-lg"></i>
+                    <h5>Transparency</h5>
+                    <p>All rules and outcomes are encoded on-chain for full auditability and zero manipulation.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-robot icon-lg"></i>
+                    <h5>No Human Intervention</h5>
+                    <p>Automated logic ensures no one can interfere with results — not even admins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Benefits -->
+    <section class="container slide-in">
+        <h2 class="text-center mb-5">Why Choose VotingSystem AS?</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-mobile-alt icon-lg"></i>
+                    <h5>Mobile Friendly</h5>
+                    <p>Accessible from smartphones, tablets, and desktops — anytime, anywhere.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-search icon-lg"></i>
+                    <h5>Auditable Records</h5>
+                    <p>Election data can be independently verified, restoring trust in democracy.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-layer-group icon-lg"></i>
+                    <h5>Modular System</h5>
+                    <p>Easy to adapt for campus elections, community polls, or national-level voting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 VotingSystem AS | Built with Solidity + Bootstrap + ❤️
+    </footer>
+
+    <!-- Animation Script -->
+    <script>
+        const slideIns = document.querySelectorAll('.slide-in');
+        const onScroll = () => {
+            slideIns.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= window.innerHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+        };
+        window.addEventListener('scroll', onScroll);
+        window.addEventListener('load', onScroll);
+    </script>
+</body>
+
+</html>
